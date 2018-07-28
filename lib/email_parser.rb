@@ -13,7 +13,7 @@ end
 def parse
   parsed_emails = []
   @emails.split(/[\s,']/)
-  @emails.delete_if { |e| e.length == 0}
+  @emails.delete_if{ |e| e.length == 0}
   
   
 end 
