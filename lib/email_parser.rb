@@ -14,6 +14,7 @@ def parse
   parsed_emails = []
   elements = @emails.split(/[\s,']/)
   elements.delete_if{ |e| e.length == 0}
+  return elements
   
   
 end 
