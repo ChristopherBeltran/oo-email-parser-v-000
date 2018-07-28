@@ -12,8 +12,7 @@ end
 
 def parse
   parsed_emails = []
-  delimiters = [',', ' ', "'"]
-@emails.split(Regexp.union(delimiters))
+  @emails.split(/(?<=[.?!]("|'|))\s+/).last
   
   
 end 
