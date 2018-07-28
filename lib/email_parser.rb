@@ -12,7 +12,7 @@ end
 
 def parse
   parsed_emails = []
-  @emails.split(/\b?\.\s|\?\s|\!\s/)
+  @emails.split(/[\s,']/)
   
   
 end 
