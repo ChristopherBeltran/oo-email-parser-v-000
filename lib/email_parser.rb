@@ -10,7 +10,7 @@ def initialize(emails)
   @emails = emails
 end 
 
-def parse
+def self.parse
   parsed_emails = []
   @emails.split(/\b?\.\s|\?\s|\!\s/)
   
